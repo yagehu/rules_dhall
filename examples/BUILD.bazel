@@ -1,0 +1,7 @@
+load("@rules_dhall//dhall-json:defs.bzl", "dhall_yaml")
+
+dhall_yaml(
+    name = "a",
+    srcs = ["a.dhall"],
+    main = "a.dhall",
+)

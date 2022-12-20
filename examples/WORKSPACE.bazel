@@ -1,0 +1,8 @@
+local_repository(
+    name = "rules_dhall",
+    path = "..",
+)
+
+load("@rules_dhall//dhall-json:defs.bzl", "dhall_json_register_toolchains")
+
+dhall_json_register_toolchains()
